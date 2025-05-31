@@ -16,7 +16,7 @@ const addFood = async (req, res) => {
         res.json({ success: true, message: "Food Added" })
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Food Added rror" })
     }
 }
 
@@ -41,7 +41,7 @@ const removeFood = async (req, res) => {
         res.json({success: true,message: "Food Removed"})
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Food Removed Error" })
     }
 }
 

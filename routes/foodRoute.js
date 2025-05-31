@@ -5,7 +5,7 @@ import multer from "multer";
 
 const foodRouter = express.Router();
 
-// image storage engine
+// 图像存储
 const storage = multer.diskStorage({
     destination: "uploads",
     filename: (req,file,cb)=>{

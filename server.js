@@ -6,18 +6,18 @@ import userRouter from "./routes/userRoute.js"
 import 'dotenv/config.js'
 import cartRouter from "./routes/cartRoute.js"
 
-// app config
+// app 配置
 const app=express()
 const port = 4000
 
-// middleware
+// 中间件
 app.use(express.json())
 app.use(cors())
 
-// db connection
+// db 连接
 connectDB()
 
-// api endpoints
+// api 节点
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
 
