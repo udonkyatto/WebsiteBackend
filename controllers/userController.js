@@ -31,7 +31,7 @@ const createToken = (id) => {
 
 // 注册 user
 const registerUser = async (req, res) => {
-    const { name, password, email } = req.body
+    const { name, password, email } = req.body;
     try {
         // 检查用户是否已存在
         const exists = await userModel.findOne({ email })
